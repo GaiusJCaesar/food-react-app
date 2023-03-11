@@ -1,0 +1,89 @@
+[debug] [2023-03-11T18:46:20.932Z] ----------------------------------------------------------------------
+[debug] [2023-03-11T18:46:20.933Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lewis Dean\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-03-11T18:46:20.934Z] CLI Version:   11.24.1
+[debug] [2023-03-11T18:46:20.934Z] Platform:      win32
+[debug] [2023-03-11T18:46:20.934Z] Node Version:  v18.12.1
+[debug] [2023-03-11T18:46:20.935Z] Time:          Sat Mar 11 2023 18:46:20 GMT+0000 (Greenwich Mean Time)
+[debug] [2023-03-11T18:46:20.936Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-11T18:46:21.005Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-11T18:46:21.005Z] > authorizing via signed-in user (lewisdean2010@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Lewis Dean\Documents\Workspace\food-react-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-03-11T18:46:34.226Z] Using project from CLI flag: food-react-page
+[debug] [2023-03-11T18:46:34.229Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/food-react-page [none]
+[debug] [2023-03-11T18:46:34.510Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/food-react-page 200
+[debug] [2023-03-11T18:46:34.510Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/food-react-page {"projectId":"food-react-page","projectNumber":"246182608610","displayName":"food-react-page","name":"projects/food-react-page","resources":{"hostingSite":"food-react-page","realtimeDatabaseInstance":"food-react-page-default-rtdb"},"state":"ACTIVE","etag":"1_8c5e1e9f-529f-4898-991b-9f3d8bb2b84f"}
+[info] i  Using project food-react-page (food-react-page) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-03-11T18:46:34.518Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/food-react-page/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-03-11T18:46:34.518Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/food-react-page/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/food-react-page
+[debug] [2023-03-11T18:46:35.377Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/food-react-page/services/firebasedatabase.googleapis.com 200
+[debug] [2023-03-11T18:46:35.377Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/food-react-page/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-03-11T18:46:35.380Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/food-react-page/locations/-/instances/food-react-page-default-rtdb [none]
+[debug] [2023-03-11T18:46:35.898Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/food-react-page/locations/-/instances/food-react-page-default-rtdb 200
+[debug] [2023-03-11T18:46:35.898Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/food-react-page/locations/-/instances/food-react-page-default-rtdb {"name":"projects/246182608610/locations/europe-west1/instances/food-react-page-default-rtdb","project":"projects/246182608610","databaseUrl":"https://food-react-page-default-rtdb.europe-west1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-03-11T18:46:38.715Z] >>> [apiv2][query] GET https://food-react-page-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2023-03-11T18:46:38.834Z] <<< [apiv2][status] GET https://food-react-page-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2023-03-11T18:46:38.835Z] <<< [apiv2][body] GET https://food-react-page-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for food-react-page-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Functions Setup
+[debug] [2023-03-11T18:46:38.844Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-11T18:46:38.845Z] > authorizing via signed-in user (lewisdean2010@gmail.com)
+[debug] [2023-03-11T18:46:38.845Z] [iam] checking project food-react-page for permissions ["firebase.projects.get"]
+[debug] [2023-03-11T18:46:38.845Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/food-react-page:testIamPermissions [none]
+[debug] [2023-03-11T18:46:38.845Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/food-react-page:testIamPermissions x-goog-quota-user=projects/food-react-page
+[debug] [2023-03-11T18:46:38.845Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/food-react-page:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-03-11T18:46:39.505Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/food-react-page:testIamPermissions 200
+[debug] [2023-03-11T18:46:39.506Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/food-react-page:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-03-11T18:46:39.507Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/food-react-page/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-03-11T18:46:39.507Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/food-react-page/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/food-react-page
+[debug] [2023-03-11T18:46:39.513Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/food-react-page/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-03-11T18:46:39.514Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/food-react-page/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/food-react-page
+[debug] [2023-03-11T18:46:40.328Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/food-react-page/services/cloudfunctions.googleapis.com 200
+[debug] [2023-03-11T18:46:40.328Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/food-react-page/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-03-11T18:46:40.339Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/food-react-page/services/runtimeconfig.googleapis.com 200
+[debug] [2023-03-11T18:46:40.339Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/food-react-page/services/runtimeconfig.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
