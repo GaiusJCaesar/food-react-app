@@ -2,12 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createGlobalStyle } from "styled-components";
 
+const FontStyles = createGlobalStyle`
+    body {
+        font-family: 'Golos Text', sans-serif;
+    }
+`;
+
+export default FontStyles;
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    <FontStyles />
     <App />
   </React.StrictMode>
 );
