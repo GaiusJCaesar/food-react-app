@@ -1,3 +1,4 @@
+import { Outlet, Link } from "react-router-dom";
 import React from 'react';
 import styled from 'styled-components';
 
@@ -10,20 +11,20 @@ const NavigationBar = styled.nav`
   padding: 0 20px;
 `;
 
-const NavigationLink = styled.a`
+const NavigationLink = styled(Link)`
   color: #333;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
   margin: 0 10px;
 `;
-
 const TopNavigationBar = () => {
   return (
-    <NavigationBar>
-      <NavigationLink href="/">Home</NavigationLink>
-      <NavigationLink href="/meal-selection">Meal Selection</NavigationLink>
-    </NavigationBar>
+        <NavigationBar>
+            <NavigationLink to="/">Home</NavigationLink>
+            <NavigationLink to="/meal-selection">Meal Selection</NavigationLink>
+            <NavigationLink to="/meals">Meals</NavigationLink>
+        </NavigationBar>
   );
 };
 

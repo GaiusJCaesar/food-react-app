@@ -9,4 +9,5 @@ export function DateToNiceString(date: string) {
 export function DateToString(date: string) {
     Moment.locale('en')
     var dt = Moment(date).format('YYYY-MM-DD')
+    return dt
 }

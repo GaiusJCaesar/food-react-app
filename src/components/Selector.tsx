@@ -62,6 +62,7 @@ const Selector = ({date}: SelectorProps) => {
 }
 
 export default Selector;
+
 const Container = styled.div`
 margin: 10px;
 background-color: #D9C5B2;
