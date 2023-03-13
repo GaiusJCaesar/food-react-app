@@ -1,6 +1,7 @@
 import Selector from "../../components/Selector";
 import { DateToString } from "../../functions/functions";
 import Moment from 'moment';
+import styled from "styled-components";
 
 
 const MealSelection = () => {
@@ -46,6 +47,7 @@ const MealSelection = () => {
 
     return (
         <>
+            <Title>Meal Selection</Title>
             <Selector date={today_formatted} />
             <Selector date={tomorrow_formatted} />
             <Selector date={tomorrow_1_formatted} />
@@ -61,3 +63,7 @@ const MealSelection = () => {
 }
 
 export default MealSelection;
+
+const Title = styled.h1`
+display: flex;
+justify-content: center;`
