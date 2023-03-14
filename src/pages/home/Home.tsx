@@ -7,7 +7,6 @@ const Home = () => {
     return (
         <div>
             <Title>Home</Title>
-            <DateSelector />
         </div>
     )
 };

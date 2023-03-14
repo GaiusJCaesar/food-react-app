@@ -2,12 +2,15 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import db from '../../services/firestore';
 import { collection, onSnapshot, doc, setDoc, getDoc } from 'firebase/firestore';
+import { useNavigate } from 'react-router-dom';
 
 const AddMeals = () => {
     const [mealValue, setMealValue] = useState<any>({})
 
     const mealTemplate = {value: '', label: ''}
 
+    const navigate = useNavigate();
+    
     useEffect(() => {
         setMealValue(mealTemplate)
     }, [])
@@ -35,6 +38,7 @@ const AddMeals = () => {
 
     const handleClick = () => {
         setMeal(mealValue.value, mealValue);
+        navigate(`/meals`)
     } 
 
     return (

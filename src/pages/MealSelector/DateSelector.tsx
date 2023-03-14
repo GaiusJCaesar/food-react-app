@@ -46,6 +46,22 @@ const DateSelector = () => {
     const tomorrow_8 = new Date();
     tomorrow_8.setDate(tomorrow_8.getDate() + 9);
     const tomorrow_8_formatted = Moment(tomorrow_8).format('YYYY-MM-DD');
+    
+    const tomorrow_9 = new Date();
+    tomorrow_9.setDate(tomorrow_9.getDate() + 9);
+    const tomorrow_9_formatted = Moment(tomorrow_9).format('YYYY-MM-DD');
+    
+    const tomorrow_10 = new Date();
+    tomorrow_10.setDate(tomorrow_10.getDate() + 9);
+    const tomorrow_10_formatted = Moment(tomorrow_10).format('YYYY-MM-DD');
+
+    const tomorrow_11 = new Date();
+    tomorrow_11.setDate(tomorrow_11.getDate() + 9);
+    const tomorrow_11_formatted = Moment(tomorrow_11).format('YYYY-MM-DD');
+    
+    const tomorrow_12 = new Date();
+    tomorrow_12.setDate(tomorrow_12.getDate() + 9);
+    const tomorrow_12_formatted = Moment(tomorrow_12).format('YYYY-MM-DD');
 
     return (
         <>
@@ -61,6 +77,10 @@ const DateSelector = () => {
             <DateComponent date={tomorrow_6_formatted} />
             <DateComponent date={tomorrow_7_formatted} />
             <DateComponent date={tomorrow_8_formatted} />
+            <DateComponent date={tomorrow_9_formatted} />
+            <DateComponent date={tomorrow_10_formatted} />
+            <DateComponent date={tomorrow_11_formatted} />
+            <DateComponent date={tomorrow_12_formatted} />
         </>
     )
 }
