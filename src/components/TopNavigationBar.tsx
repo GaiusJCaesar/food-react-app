@@ -22,7 +22,7 @@ const TopNavigationBar = () => {
   return (
         <NavigationBar>
             <NavigationLink to="/">Home</NavigationLink>
-            <NavigationLink to="/meal-selection">Meal Selection</NavigationLink>
+            <NavigationLink to="/date-selector">Meal Selection</NavigationLink>
             <NavigationLink to="/meals">Meals</NavigationLink>
         </NavigationBar>
   );

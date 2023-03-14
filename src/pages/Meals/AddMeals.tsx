@@ -70,11 +70,12 @@ const Button = styled.button`
 width: 10%;
 `;
 const Container = styled.div`
-background-color: grey;
+background-color: #D9C5B2;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 10px
+align-self: center;
+padding: 20px;
 `
 const Title = styled.h1`
 display: flex;
