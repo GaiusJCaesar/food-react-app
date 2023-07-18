@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { DateToNiceString } from '../../functions/functions';
 import AddNote from './components/AddNote';
 import Note from './components/Note';
-import db from '../../services/firestore';
+import {db} from '../../services/firestore';
 import { collection, onSnapshot, doc, setDoc, getDoc, deleteDoc } from 'firebase/firestore';
 
 

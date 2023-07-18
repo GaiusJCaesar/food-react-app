@@ -1,0 +1,30 @@
+[debug] [2023-04-09T22:24:01.279Z] ----------------------------------------------------------------------
+[debug] [2023-04-09T22:24:01.281Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lewis Dean\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-04-09T22:24:01.282Z] CLI Version:   11.24.1
+[debug] [2023-04-09T22:24:01.282Z] Platform:      win32
+[debug] [2023-04-09T22:24:01.282Z] Node Version:  v18.12.1
+[debug] [2023-04-09T22:24:01.284Z] Time:          Sun Apr 09 2023 23:24:01 GMT+0100 (British Summer Time)
+[debug] [2023-04-09T22:24:01.284Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-09T22:24:01.288Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-04-09T22:24:01.397Z] Object ".remoteconfig" in "firebase.json" is missing required property: {"missingProperty":"template"}
+[debug] [2023-04-09T22:24:01.403Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-09T22:24:01.404Z] > authorizing via signed-in user (lewisdean2010@gmail.com)
+[debug] [2023-04-09T22:24:01.405Z] Object ".remoteconfig" in "firebase.json" is missing required property: {"missingProperty":"template"}
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Lewis Dean\Documents\Workspace\food-react-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2023-04-09T22:24:01.681Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-04-09T22:24:01.682Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}

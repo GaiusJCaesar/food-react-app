@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import ReactSelect from 'react-select';
-import db from '../services/firestore';
+import {db} from '../services/firestore';
 import { collection, onSnapshot, doc, setDoc, getDoc } from 'firebase/firestore';
 import { DateToNiceString } from '../functions/functions';
 

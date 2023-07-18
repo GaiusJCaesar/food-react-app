@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import db from '../services/firestore';
+import {db} from '../services/firestore';
 import { collection, onSnapshot, doc, setDoc, getDoc } from 'firebase/firestore';
 
 const Meal = (data: any) => {

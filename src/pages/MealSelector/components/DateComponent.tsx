@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import ReactSelect from 'react-select';
-import db from '../../../services/firestore';
+import {db} from '../../../services/firestore';
 import { collection, onSnapshot, doc, setDoc, getDoc } from 'firebase/firestore';
 import { DateToNiceString } from '../../../functions/functions';
 import { Link, useNavigate } from 'react-router-dom';
@@ -14,7 +14,7 @@ const DateComponent = ({date}: SelectorProps) => {
     const navigate = useNavigate();
 
     function handleNavigationClick() {
-        navigate(`/meal-selector/${date}`, {state: {date: date}})
+        // navigate(`/meal-selector/${date}`, {state: {date: date}})
     }
     
     const [mealsAvailable, setMealsAvailable] = useState<any[] | undefined>([]) 
@@ -46,9 +46,6 @@ const DateComponent = ({date}: SelectorProps) => {
     };
 
     return (
-        // <Link to={{
-        //     pathname:`/meal-selector/${date}`,
-        // }}>
         <Container>
             <Header onClick={handleNavigationClick}>
                 <Title>
@@ -59,7 +56,6 @@ const DateComponent = ({date}: SelectorProps) => {
                 </Subtitle>
             </Header>
         </Container>
-        // </Link>
     )
 }
 

@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getAuth } from 'firebase/auth';
 import { collection, doc, getDoc, getDocs } from "firebase/firestore"; 
 import React, { useState } from "react";
 
@@ -23,8 +24,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 // Initialize Cloud Firestore and get a reference to the service
-const db = getFirestore(app);
-export default getFirestore(app);
+export const db = getFirestore(app);
+
+export const auth = getAuth(app);
 
 // export const getMealByName = async (mealName: string) => {
 //     try {
